@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
+   <children>
+      <TableView editable="true" prefHeight="301.0" prefWidth="600.0">
+        <columns>
+          <TableColumn minWidth="9.0" prefWidth="31.0" text="ID" />
+          <TableColumn prefWidth="131.0" text="FIRST NAME" />
+            <TableColumn prefWidth="95.0" text="LAST NAME" />
+            <TableColumn prefWidth="84.0" text="CIN" />
+            <TableColumn prefWidth="84.0" text="DOB" />
+            <TableColumn prefWidth="84.0" text="EMAIL" />
+            <TableColumn prefWidth="84.0" text="PASSWORD" />
+        </columns>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>

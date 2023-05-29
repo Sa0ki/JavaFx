@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="650" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fxapplication.Controllers.LoginFormController">
+
+    <columnConstraints>
+        <ColumnConstraints prefWidth="50.0" />
+        <ColumnConstraints prefWidth="750.0" />
+        <ColumnConstraints prefWidth="50.0" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints prefHeight="100.0" />
+        <RowConstraints prefHeight="100.0" />
+        <RowConstraints prefHeight="100.0" />
+        <RowConstraints prefHeight="100.0" />
+        <RowConstraints prefHeight="100.0" />
+    </rowConstraints>
+
+    <VBox alignment="CENTER" translateX="50" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Label prefHeight="46.0" prefWidth="349.0" text="Authentication" textOverrun="CLIP">
+            <font>
+                <Font name="Cascadia Code Regular" size="31.0" />
+            </font>
+        </Label>
+    </VBox>
+
+   <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+       <Label text="Email" translateX="-85.0" />
+       <TextField fx:id="emailField" maxWidth="200.0" prefHeight="25.0" />
+   </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Label text="Password" translateX="-75.0" />
+        <PasswordField fx:id="passwordField" maxWidth="200.0" prefHeight="25.0" />
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="20" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Label fx:id="message" textFill="RED" />
+        <Button fx:id="loginButton" onAction="#onLoginButtonClick" text="Login" />
+    </VBox>
+
+</GridPane>
